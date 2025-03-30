@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import logo from '../assets/logo.png';
 
 const NavContainer = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to right, #000000, #1a1a1a);
+  background: #fff;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,8 @@ const NavContainer = styled.nav`
 
 const Logo = styled.div`
   img {
-    height: 40px;
+    height: 80px;
+    width: 120px;
   }
 `;
 
@@ -25,7 +27,7 @@ const NavLinks = styled.div`
   gap: 2rem;
   
   a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -42,7 +44,7 @@ const Navbar = () => {
     <NavContainer>
       <Logo>
         <a href="/">
-          <img src="/logo.png" alt="Swiftees" />
+          <img src={logo} alt="Swiftees" />
         </a>
       </Logo>
       <NavLinks>

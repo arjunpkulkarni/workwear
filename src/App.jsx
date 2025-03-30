@@ -7,8 +7,6 @@ import Footer from './components/Footer';
 
 const MainContainer = styled.div`
   min-height: 100vh;
-  background-color: #000;
-  color: #fff;
 `;
 
 function App() {
@@ -17,8 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <Footer />
-      
+      <Footer />      
     </MainContainer>
   );
 }

@@ -16,6 +16,7 @@ const HeroHeading = styled(motion.h1)`
   font-size: 3.5rem;
   text-align: center;
   margin-bottom: 4rem;
+  margin-top: 4rem;
   max-width: 800px;
   line-height: 1.2;
 `;
@@ -63,7 +64,7 @@ const Hero = () => {
         <br />
         for the best in business.
       </HeroHeading>
-      
+
       <ImageGrid>
         {heroImages.map((image, index) => (
           <ImageContainer
