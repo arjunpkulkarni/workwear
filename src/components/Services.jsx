@@ -4,8 +4,9 @@ import { motion } from 'framer-motion';
 
 const ServicesSection = styled.section`
   padding: 4rem 2rem;
-  background-color: #000;
-  color: white;
+  background-color: #fff;
+  color: black;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const SectionTitle = styled.h2`

@@ -4,11 +4,12 @@ import { motion } from 'framer-motion';
 
 const HeroContainer = styled.section`
   min-height: 100vh;
-  background-color: #000;
-  color: white;
+  background-color: #fff;
+  color: black;
   padding: 6rem 2rem 2rem;
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
   align-items: center;
 `;
 

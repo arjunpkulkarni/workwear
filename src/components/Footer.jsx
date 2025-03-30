@@ -2,9 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const FooterContainer = styled.footer`
-  background-color: #000;
-  color: white;
+  background-color: #fff;
+  color: black;
   padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const FooterContent = styled.div`
