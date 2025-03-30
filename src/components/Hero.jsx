@@ -50,6 +50,7 @@ const ImageContainer = styled(motion.div)`
   aspect-ratio: 3/4;
   width: 100%;
   
+  
   img {
     width: 100%;
     height: 100%;
@@ -71,9 +72,9 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        High-quality custom apparel
+        Premium tailored apparel
         <br />
-        for the best in business.
+        crafted for professionals.
       </HeroHeading>
 
       <ImageGrid>

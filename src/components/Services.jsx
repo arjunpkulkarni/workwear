@@ -2,6 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 
+import services1 from "../assets/services1.png"
+import services2 from "../assets/services2.png"
+import services3 from "../assets/services3.png"
+
 const ServicesSection = styled.section`
   padding: 4rem 2rem;
   background-color: #fff;
@@ -61,11 +65,13 @@ const ServiceContent = styled.div`
   h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: white;
   }
   
   p {
     font-size: 1rem;
     opacity: 0.9;
+    color: white;
   }
 `;
 
@@ -73,17 +79,17 @@ const services = [
   {
     title: "Staff Uniforms",
     description: "Clothing customized with your logo and artwork.",
-    image: "/service-uniforms.jpg"
+    image: services1
   },
   {
     title: "Merchandising",
     description: "Curated gifts with your company's brand",
-    image: "/service-merch.jpg"
+    image: services2
   },
   {
     title: "Artwork Design",
     description: "On-brand artwork designed to stand out on print.",
-    image: "/service-design.jpg"
+    image: services3
   }
 ];
 

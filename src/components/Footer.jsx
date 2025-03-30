@@ -41,7 +41,7 @@ const FooterColumn = styled.div`
   }
   
   a {
-    color: #e0e0e0;
+    color:rgb(90, 90, 90);
     text-decoration: none;
     transition: color 0.3s ease;
     
@@ -101,7 +101,7 @@ const Footer = () => {
       </FooterContent>
       
       <Copyright>
-        © Swiftees {new Date().getFullYear()}
+        © WorkWear {new Date().getFullYear()}
       </Copyright>
     </FooterContainer>
   );
