@@ -17,8 +17,8 @@ const NavContainer = styled.nav`
 
 const Logo = styled.div`
   img {
-    height: 80px;
-    width: 120px;
+    height: 100px;
+    width: 160px;
   }
 `;
 
