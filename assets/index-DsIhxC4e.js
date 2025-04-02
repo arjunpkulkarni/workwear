@@ -51,7 +51,7 @@ Error generating stack: `+n.message+`
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: transparent;
   backdrop-filter: blur(5px);
   padding: 1rem 2rem;
   display: flex;
