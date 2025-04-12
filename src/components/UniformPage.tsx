@@ -60,98 +60,30 @@ const UniformCard = styled.div`
 
 const UniformImage = styled.img`
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
-`;
-
-const UniformInfo = styled.div`
-  padding: 1.5rem;
-`;
-
-const UniformTitle = styled.h3`
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: black;
-  margin-bottom: 0.5rem;
-  font-family: 'Poppins', sans-serif;
-`;
-
-const UniformDescription = styled.p`
-  color: black;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
 `;
 
 const UniformPage = () => {
   const uniforms = [
-    {
-      id: 1,
-      title: 'Polo Shirts',
-      description: 'Professional polo shirts available in various colors and sizes. Perfect for corporate environments.',
-      image: pic1,
-    },
-    {
-      id: 2,
-      title: 'Hi-Vis Vests',
-      description: 'High-visibility safety vests for construction and outdoor work. Available in multiple sizes.',
-      image: pic2,
-    },
-    {
-      id: 3,
-      title: 'Button-Up Shirts',
-      description: 'Classic button-up shirts for a professional look. Available in multiple colors and patterns.',
-      image: pic3,
-    },
-    {
-      id: 4,
-      title: 'Branded Hats',
-      description: 'Custom branded hats to complete your uniform. Available in various styles and colors.',
-      image: pic4,
-    },
-    {
-      id: 5,
-      title: 'Work Jackets',
-      description: 'Durable work jackets for all weather conditions. Available in multiple sizes and colors.',
-      image: pic5,
-    },
-    {
-      id: 6,
-      title: 'Safety Boots',
-      description: 'High-quality safety boots for maximum protection and comfort.',
-      image: pic6,
-    },
-    {
-      id: 7,
-      title: 'Work Pants',
-      description: 'Durable work pants designed for comfort and functionality.',
-      image: pic7,
-    },
-    {
-      id: 8,
-      title: 'Safety Gloves',
-      description: 'Protective gloves for various work environments.',
-      image: pic8,
-    },
-    {
-      id: 9,
-      title: 'Safety Glasses',
-      description: 'Protective eyewear for workplace safety.',
-      image: pic9,
-    },
+    { id: 1, image: pic1 },
+    { id: 2, image: pic2 },
+    { id: 3, image: pic3 },
+    { id: 4, image: pic4 },
+    { id: 5, image: pic5 },
+    { id: 6, image: pic6 },
+    { id: 7, image: pic7 },
+    { id: 8, image: pic8 },
+    { id: 9, image: pic9 },
   ];
 
   return (
     <Section>
-      <Title>Staff Uniforms</Title>
+      <Title>Our Workwear Collection</Title>
       <UniformsGrid>
         {uniforms.map((uniform) => (
           <UniformCard key={uniform.id}>
-            <UniformImage src={uniform.image} alt={uniform.title} />
-            <UniformInfo>
-              <UniformTitle>{uniform.title}</UniformTitle>
-              <UniformDescription>{uniform.description}</UniformDescription>
-            </UniformInfo>
+            <UniformImage src={uniform.image} alt={`Uniform ${uniform.id}`} />
           </UniformCard>
         ))}
       </UniformsGrid>

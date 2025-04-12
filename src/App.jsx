@@ -4,9 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Footer from './components/Footer';
-import GetQuote from './components/GetQuote';
-import PriceCalc from './components/PriceCalc';
-import Contact from './components/Contact';
+import QuotePage from './pages/quotePage';
 import UniformPage from './components/UniformPage';
 const MainContainer = styled.div`
   min-height: 100vh;
@@ -18,9 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <GetQuote />
-      <PriceCalc />
-      <Contact />
+      <QuotePage />
       <UniformPage />
       <Footer />      
     </MainContainer>
