@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import GetQuote from './components/GetQuote';
 import PriceCalc from './components/PriceCalc';
 import Contact from './components/Contact';
-
+import UniformPage from './components/UniformPage';
 const MainContainer = styled.div`
   min-height: 100vh;
 `;
@@ -21,6 +21,7 @@ function App() {
       <GetQuote />
       <PriceCalc />
       <Contact />
+      <UniformPage />
       <Footer />      
     </MainContainer>
   );
