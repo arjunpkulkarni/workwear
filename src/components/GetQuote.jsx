@@ -48,7 +48,7 @@ const Select = styled.select`
   border-radius: 6px;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: white;
 `;
 
 const Textarea = styled.textarea`
@@ -61,7 +61,7 @@ const Textarea = styled.textarea`
   min-height: 100px;
   resize: vertical;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: white;
 `;
 
 const CheckboxLabel = styled.label`
@@ -70,7 +70,7 @@ const CheckboxLabel = styled.label`
   gap: 0.5rem;
   margin-bottom: 1rem;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: white;
   flex-direction: row;
 `;
 
@@ -78,7 +78,7 @@ const Button = styled.button`
   width: 100%;
   padding: 0.75rem;
   background-color: #FFA07A;
-  color: black;
+  color: white;
   font-size: 1rem;
   border: none;
   border-radius: 6px;
