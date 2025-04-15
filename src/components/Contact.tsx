@@ -1,5 +1,6 @@
 "use client"
 
+import React from 'react'
 import { useState } from "react"
 import styled from "@emotion/styled"
 
@@ -59,7 +60,7 @@ const Input = styled.input`
   border-radius: 8px;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: #fff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   
   &:focus {

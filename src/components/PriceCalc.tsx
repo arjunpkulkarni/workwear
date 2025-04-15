@@ -1,5 +1,6 @@
 "use client"
 
+import React from 'react'
 import { useState } from "react"
 import styled from "@emotion/styled"
 
@@ -55,28 +56,30 @@ const Input = styled.input`
   padding: 0.85rem 1rem;
   margin-bottom: 1.25rem;
   border: 1px solid #e1e1e1;
+  background-color: #1a1a1a; /* dark background so white text shows */
+  color: white;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
-  color: #333;
+  font-family: 'Poppins', sans-serif;  
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  
+
   &:focus {
     outline: none;
     border-color: #FFA07A;
     box-shadow: 0 0 0 3px rgba(255, 160, 122, 0.2);
   }
-  
+
   &::placeholder {
     color: #aaa;
   }
-  
+
   &[type="checkbox"] {
     width: auto;
     margin-right: 0.5rem;
     margin-bottom: 0;
   }
-`
+`;
+
 
 const Select = styled.select`
   width: 100%;
