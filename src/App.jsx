@@ -20,7 +20,7 @@ function App() {
       <Hero />
       <Services />
       <QuotePage />
-      <UniformPage />
+      {/* <UniformPage /> */}
       <Artwork />
       <AboutUs />
       <Footer />      

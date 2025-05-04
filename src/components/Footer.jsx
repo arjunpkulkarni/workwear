@@ -67,8 +67,6 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/work">Our Work</a></li>
-            <li><a href="/facility">The Facility</a></li>
           </ul>
         </FooterColumn>
         
@@ -76,17 +74,13 @@ const Footer = () => {
           <h3>Services</h3>
           <ul>
             <li><a href="/uniforms">Staff Uniforms</a></li>
-            <li><a href="/merchandise">Merchandising</a></li>
-            <li><a href="/design">Artwork Design</a></li>
+            <li><a href="/services">Our Services</a></li>
           </ul>
         </FooterColumn>
         
         <FooterColumn>
           <h3>Resources</h3>
           <ul>
-            <li><a href="/help">Support</a></li>
-            <li><a href="/faq">FAQs</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
           </ul>
         </FooterColumn>
         
@@ -94,8 +88,6 @@ const Footer = () => {
           <h3>Contact</h3>
           <ul>
             <li><a href="/quote">Get a Quote</a></li>
-            <li><a href="/calculator">Price Calculator</a></li>
-            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </FooterColumn>
       </FooterContent>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import GetQuote from "../components/GetQuote"
-import PriceCalc from "../components/PriceCalc"
+// import PriceCalc from "../components/PriceCalc"
 import Contact from "../components/Contact"
 
 const Container = styled.div`
@@ -9,7 +9,7 @@ const Container = styled.div`
   flex-direction: row;
   gap: 2rem;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #fff;
   min-height: 100vh;
   width: 100%;
   overflow-x: auto;
@@ -22,6 +22,7 @@ const Container = styled.div`
 const ComponentWrapper = styled.div`
   flex: 1;
   min-width: 300px;
+  background-color: #fff;
 `;
 
 const QuotePage = () => {
@@ -30,9 +31,9 @@ const QuotePage = () => {
             <ComponentWrapper>
                 <GetQuote />
             </ComponentWrapper>
-            <ComponentWrapper>
+            {/* <ComponentWrapper>
                 <PriceCalc />
-            </ComponentWrapper>
+            </ComponentWrapper> */}
             <ComponentWrapper>
                 <Contact />
             </ComponentWrapper>

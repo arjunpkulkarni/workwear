@@ -6,12 +6,11 @@ import styled from "@emotion/styled"
 
 const Section = styled.section`
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
 `
 
 const FormWrapper = styled.form`

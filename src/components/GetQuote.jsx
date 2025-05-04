@@ -167,22 +167,35 @@ const GetQuote = () => {
     phone: "",
     businessName: "",
     workwearType: "",
-    customArtwork: false,
-    artworkFile: null,
     additionalInfo: "",
   })
 
   const handleChange = (e) => {
-    const { name, value, type, checked, files } = e.target
+    const { name, value, type, checked } = e.target
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : type === "file" ? files[0] : value,
+      [name]: type === "checkbox" ? checked : value,
     }))
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formData)
+    const { name, email, phone, businessName, workwearType, additionalInfo } = formData
+    const subject = `Workwear Quote Request - ${businessName || name}`
+    const body = `
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Business Name: ${businessName}
+Workwear Type: ${workwearType}
+Additional Info: ${additionalInfo}
+
+---
+Please attach artwork file if applicable.---
+    `
+    const mailtoLink = `mailto:gianniramirezd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    
+    window.location.href = mailtoLink;
   }
 
   return (
@@ -191,11 +204,11 @@ const GetQuote = () => {
         <Title>Request a Quote</Title>
         <Input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
         <Input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-        <Input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} />
+        <Input type="tel" name="phone" placeholder="Phone Number (Optional)" value={formData.phone} onChange={handleChange} />
         <Input
           type="text"
           name="businessName"
-          placeholder="Business Name"
+          placeholder="Business Name (Optional)"
           value={formData.businessName}
           onChange={handleChange}
         />
@@ -206,13 +219,23 @@ const GetQuote = () => {
           <option value="jackets">Jackets</option>
           <option value="hi-vis">Hi-Vis</option>
         </Select>
+        <label htmlFor="artworkFile" style={{ display: 'block', marginBottom: '0.5rem', color: '#333', fontSize: '0.9rem' }}>Attach Artwork (Optional):</label>
+        <Input 
+          type="file" 
+          name="artworkFile" 
+          id="artworkFile"
+          style={{ marginBottom: '1.25rem', color: '#333' }}
+        />
+        <div style={{fontSize: '0.8rem', color: '#555', marginBottom: '1.25rem', marginTop: '-0.75rem'}}>
+          Note: Please attach your file manually to the email that opens.
+        </div>
         <Textarea
           name="additionalInfo"
           placeholder="Additional Info"
           value={formData.additionalInfo}
           onChange={handleChange}
         />
-        <Button type="submit">Request Quote</Button>
+        <Button type="submit">Request Quote via Email</Button>
       </FormWrapper>
     </Section>
   )
